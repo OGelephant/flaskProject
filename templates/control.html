@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% if age >18 %}
+    <div>你成年了</div>
+        {% elif age ==18%}
+    <div>你刚刚成年了</div>
+    {% else %}
+    <div>啥也不说了</div>
+{% endif  %}
+{% for i in books %}
+    <div>{{ i.name }}------------------------------------->{{ i.author }}</div>
+    <div></div>
+{% endfor %}
+</body>
+</html>
